@@ -1,0 +1,7 @@
+Parent:
+<button (click)="this.parentCounterClick()"> Counter from parent ({{this.counter}})</button>
+
+<br />
+<!-- <child-app1 [title]="this.title" [counter]="this.counter" (counterChange)="this.onCounterChange($event)"></child-app1> -->
+
+<app-child1 [title]="this.title" [counter]="this.counter" (counterChange)="this.onCounterChange($event)"></app-child1>
