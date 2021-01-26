@@ -10,6 +10,8 @@ export class AppComponent {
 
   counter = 3;
 
+  formObj = { email: 'kulkarni.onkar@gmail.com', address: '123 S Tryon St', address2:'', city:'Charlotte', state: 'NC', zip:'28202'};
+
 
   parentCounterClick() {
     this.counter++;

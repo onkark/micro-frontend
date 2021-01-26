@@ -1,7 +1,63 @@
-Parent:
-<button (click)="this.parentCounterClick()"> Counter from parent ({{this.counter}})</button>
+<div id="wrapper">
 
-<br />
-<!-- <child-app1 [title]="this.title" [counter]="this.counter" (counterChange)="this.onCounterChange($event)"></child-app1> -->
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a href="#">
+          Start Bootstrap
+        </a>
+      </li>
+      <li>
+        <a href="#">Dashboard</a>
+      </li>
+      <li>
+        <a href="#">Shortcuts</a>
+      </li>
+      <li>
+        <a href="#">Overview</a>
+      </li>
+      <li>
+        <a href="#">Events</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Services</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <!-- /#sidebar-wrapper -->
 
-<app-child1 [title]="this.title" [counter]="this.counter" (counterChange)="this.onCounterChange($event)"></app-child1>
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          Parent:
+          <button (click)="this.parentCounterClick()"> Counter from parent ({{this.counter}})</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- <child-app1 [title]="this.title" [counter]="this.counter" (counterChange)="this.onCounterChange($event)"></child-app1> -->
+
+          <child-button [title]="this.title" [counter]="this.counter" (counterChange)="this.onCounterChange($event)"></child-button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+            <child-entry [formObj]="this.formObj"></child-entry>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
