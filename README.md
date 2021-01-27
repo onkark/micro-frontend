@@ -1,4 +1,4 @@
-Build and Run Parent App
+Build and Run Base App
 
 ```shell
 ng serve
